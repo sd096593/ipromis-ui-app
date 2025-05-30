@@ -1,0 +1,9 @@
+<h2>Your Cart</h2>
+
+<div *ngIf="items.length === 0" class="empty-cart">
+  🛒 Your cart is empty.
+</div>
+
+<div *ngFor="let item of items" class="cart-item">
+  <p><strong>{{ item.name }}</strong> - ₹{{ item.price }}</p>
+</div>
